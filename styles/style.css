@@ -90,7 +90,7 @@ body{
     border: none;
     /* transform: rotate(-180deg); */
     transform-origin: top center;
-    animation: speen 0.48s linear 0s infinite;
+    animation: speen 3.82s linear 0s infinite;
 }
 #venus-container{
     position: center;
@@ -100,7 +100,7 @@ body{
     border: none;
     /* transform: rotate(-90deg); */
     transform-origin: top center;
-    animation: speen 1.2s linear 0s infinite;
+    animation: speen 7.89s linear 0s infinite;
 }
 #earth-container{
     position: center;
@@ -110,7 +110,7 @@ body{
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
-    animation: speen 2.0s linear 0s infinite;
+    animation: speen 10s linear 0s infinite;
 }
 #mars-container{
     position: center;
@@ -120,7 +120,7 @@ body{
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
-    animation: speen 3.8s linear 0s infinite;
+    animation: speen 12.74s linear 0s infinite;
 }
 #jupiter-container{
     position: center;
@@ -130,7 +130,7 @@ body{
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
-    animation: speen 23.6s linear 0s infinite;
+    animation: speen 20.74s linear 0s infinite;
 }
 #saturn-container{
     position: center;
@@ -140,7 +140,7 @@ body{
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
-    animation: speen 59s linear 0s infinite;
+    animation: speen 24.69s linear 0s infinite;
 }
 #uranus-container{
     position: center;
@@ -150,7 +150,7 @@ body{
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
-    animation: speen 164s linear 0s infinite;
+    animation: speen 29.24s linear 0s infinite;
 }
 #neptune-container{
     position: center;
@@ -160,7 +160,7 @@ body{
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
-    animation: speen 330s linear 0s infinite;
+    animation: speen 32.7s linear 0s infinite;
 }
 
 

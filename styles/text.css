@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+.orbitron{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+header{
+    margin: 50px;
+}
+
+.page-title{
+    font-family: "Orbitron", sans-serif;
+    color: azure;
+    font-size: 48px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#text-stuff{
+    margin: 100px auto;
+    width: 80vw;
+}
+
+.sec-title{
+    font-family: "Orbitron", sans-serif;
+    color: azure;
+    font-size: 32px;
+}
+.desc{
+    font-family: "Orbitron", sans-serif;
+    color: rgba(240, 255, 255, 0.65);
+    font-size: 18px;
+}
+.listy{
+    font-family: "Orbitron", sans-serif;
+    color: rgba(175, 200, 221, 0.799);
+}

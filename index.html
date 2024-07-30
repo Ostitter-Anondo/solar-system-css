@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar System Speen</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/text.css">
     <link rel="icon" type="image/x-icon" href="styles/images/solar-system.png">
 </head>
 <body>
-    <header></header>
+    <header>
+        <h1 class="page-title">A Scaled Model of the Solar System Made Using CSS Animations</h1>
+    </header>
     <main>
         <section id="solar-system">
             <div class="solar-orbit" id="neptune-orb">
@@ -54,6 +57,33 @@
                     <img src="styles/images/mercury.png" alt="" class="planet">
                 </div>
             </div>
+        </section>
+        <section id="text-stuff">
+            <h3 class="sec-title">Calculation Methodology for The Orbit</h3>
+            <p class="desc">Here I used a scaled vesion of orbit times. Following is the method used for calculating the orbit times.</p>
+            <p class="desc">Assuming the orbit time for earth as 1, and scaling the orbit period in a 1 year: 10 seconds ratio, the following time can be calculated.</p>
+            <ul>
+                <li class="listy">**Mercury**: 0.241 × 10 = 2.41 seconds</li>
+                <li class="listy">**Venus**: 0.615 × 10 = 6.15 seconds</li>
+                <li class="listy">**Earth**: 1 × 10 = 10 seconds</li>
+                <li class="listy">**Mars**: 1.881 × 10 = 18.81 seconds</li>
+                <li class="listy">**Jupiter**: 11.86 × 10 = 118.6 seconds</li>
+                <li class="listy">**Saturn**: 29.46 × 10 = 294.6 seconds</li>
+                <li class="listy">**Uranus**: 84.01 × 10 = 840.1 seconds</li>
+                <li class="listy">**Neptune**: 164.8 × 10 = 1648 seconds</li>
+            </ul>
+            <p class="desc">However, as can be seen from the calculations, the as we go outwards, the outer planet orbits become so large that they become painfully slow. To combat this, I decided to follow some advice I got from u/ballgag on r/space, where they told me to perhaps try a logarithmic function instead.</p>
+            <p class="desc">So I decided to use 10log(*period on a scale of 10*) seconds, which gave me the following results:</p>
+            <ul>
+                <li class="listy">**Mercury**: 10log(2.41) = 3.82 seconds</li>
+                <li class="listy">**Venus**: 10log(6.15) = 7.89 seconds</li>
+                <li class="listy">**Earth**: 10log(10) = 10 seconds</li>
+                <li class="listy">**Mars**: 10log(18.81) = 12.74 seconds</li>
+                <li class="listy">**Jupiter**: 10log(118.6) = 20.74 seconds</li>
+                <li class="listy">**Saturn**: 10log(294.6) = 24.69 seconds</li>
+                <li class="listy">**Uranus**: 10log(840.1) = 29.24 seconds</li>
+                <li class="listy">**Neptune**: 10log(1648) = 32.7 seconds</li>
+            </ul>
         </section>
     </main>
     <footer></footer>
