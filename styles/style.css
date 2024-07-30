@@ -196,6 +196,9 @@ body{
 
 @media screen and (max-width: 576px) {
     #solar-system{
+        -moz-transform: scale(40%);
+        -webkit-transform: scale(40%);
+        -ms-transform: scale(40%);
         transform: scale(40%);
         position: absolute;
         top: -60%;
