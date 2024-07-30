@@ -90,7 +90,7 @@ body{
     border: none;
     /* transform: rotate(-180deg); */
     transform-origin: top center;
-    animation: speen 0.24s linear 0s infinite;
+    animation: speen 0.48s linear 0s infinite;
 }
 #venus-container{
     position: center;
