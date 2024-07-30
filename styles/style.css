@@ -4,7 +4,7 @@ body{
 }
 
 #for-phone{
-    display: none;
+    position: relative;
 }
 
 #solar-system{
@@ -198,11 +198,12 @@ body{
     #solar-system{
         transform: scale(40%);
         position: absolute;
-        left: -35vw;
-        top: 30vh
+        top: -60%;
+        left: -50%;
     }
     #for-phone{
-        display: block;
-        height: 180px;
+        display: flex;
+        height: 340px;
+        justify-content: center;
     }
 }
