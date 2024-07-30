@@ -66,3 +66,19 @@ footer{
     background-color: rgb(33, 33, 36);
     padding: 10px;
 }
+
+
+@media screen and (max-width: 576px) {
+    .page-title{
+        font-size: 30px;
+    }
+    table{
+        font-size: 10px;
+    }
+    table th, table td{
+        text-align: left;
+        padding: 5px;
+        border: 1px solid aliceblue;
+    }
+    
+}
