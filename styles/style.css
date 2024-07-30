@@ -86,17 +86,17 @@ body{
     position: center;
     height: 12vh;
     right: 41.75vh;
-    bottom: 32vh;
+    bottom: 32.7vh;
     border: none;
     /* transform: rotate(-180deg); */
     transform-origin: top center;
-    animation: speen 2.4s linear 0s infinite;
+    animation: speen 0.24s linear 0s infinite;
 }
 #venus-container{
     position: center;
     height: 17vh;
     right: 41.75vh;
-    bottom: 27vh;
+    bottom: 27.7vh;
     border: none;
     /* transform: rotate(-90deg); */
     transform-origin: top center;
@@ -106,7 +106,7 @@ body{
     position: center;
     height: 22vh;
     right: 41.75vh;
-    bottom: 22vh;
+    bottom: 22.7vh;
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
@@ -116,7 +116,7 @@ body{
     position: center;
     height: 27vh;
     right: 41.75vh;
-    bottom: 17vh;
+    bottom: 17.7vh;
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
@@ -124,9 +124,9 @@ body{
 }
 #jupiter-container{
     position: center;
-    height: 37vh;
+    height: 32vh;
     right: 41.75vh;
-    bottom: 7vh;
+    bottom: 12.7vh;
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
@@ -134,9 +134,9 @@ body{
 }
 #saturn-container{
     position: center;
-    height: 32vh;
+    height: 37vh;
     right: 41.75vh;
-    bottom: 12vh;
+    bottom: 7.8vh;
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
@@ -146,7 +146,7 @@ body{
     position: center;
     height: 42vh;
     right: 41.75vh;
-    bottom: 2vh;
+    bottom: 2.9vh;
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
@@ -156,7 +156,7 @@ body{
     position: center;
     height: 47vh;
     right: 41.75vh;
-    bottom: -3vh;
+    bottom: -2.0vh;
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
