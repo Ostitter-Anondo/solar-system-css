@@ -99,7 +99,7 @@ iframe{
     position: center;
     height: 12vh;
     right: 41.75vh;
-    bottom: 32.7vh;
+    bottom: 32vh;
     border: none;
     /* transform: rotate(-180deg); */
     transform-origin: top center;
@@ -109,7 +109,7 @@ iframe{
     position: center;
     height: 17vh;
     right: 41.75vh;
-    bottom: 27.7vh;
+    bottom: 27vh;
     border: none;
     /* transform: rotate(-90deg); */
     transform-origin: top center;
@@ -119,7 +119,7 @@ iframe{
     position: center;
     height: 22vh;
     right: 41.75vh;
-    bottom: 22.7vh;
+    bottom: 22vh;
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
@@ -129,7 +129,7 @@ iframe{
     position: center;
     height: 27vh;
     right: 41.75vh;
-    bottom: 17.7vh;
+    bottom: 17vh;
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
@@ -139,7 +139,7 @@ iframe{
     position: center;
     height: 32vh;
     right: 41.75vh;
-    bottom: 12.7vh;
+    bottom: 12vh;
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
@@ -149,7 +149,7 @@ iframe{
     position: center;
     height: 37vh;
     right: 41.75vh;
-    bottom: 7.8vh;
+    bottom: 7vh;
     border: none;
     /* transform: rotate(90deg); */
     transform-origin: top center;
@@ -198,17 +198,5 @@ iframe{
     100%{
         transform: rotate(360deg);
         transform-origin: top center;
-    }
-}
-
-
-@media screen and (max-width: 576px) {
-    #for-phone{
-        display: none;
-        height: 340px;
-        justify-content: center;
-    }
-    #frame-area{
-        display: flex;
     }
 }
