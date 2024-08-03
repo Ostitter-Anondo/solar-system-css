@@ -60,113 +60,73 @@
         </section>
         
         <section id="text-stuff">
-            <h3 class="sec-title">Calculation Methodology for The Orbit</h3>
-            <p class="desc">Here I used a scaled vesion of orbit times. Following is the method used for calculating the orbit times.</p>
-            <p class="desc">Assuming the orbit time for earth as 1, and scaling the orbit period in a <b>1 year:5 seconds</b> ratio, the following time can be calculated.</p>
-            <table class="space-mono">
-                <thead>
-                    <tr>
-                        <th>Planet</th>
-                        <th>Scale of 1</th>
-                        <th>Scale of 5s</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Mercury</td>
-                        <td>0.241</td>
-                        <td>1.2 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Venus</td>
-                        <td>0.615</td>
-                        <td>3.1 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Earth</td>
-                        <td>1</td>
-                        <td>5 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Mars</td>
-                        <td>1.881</td>
-                        <td>9.41 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Jupiter</td>
-                        <td>11.86</td>
-                        <td>59.3 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Saturn</td>
-                        <td>29.46</td>
-                        <td>147.3 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Uranus</td>
-                        <td>84.01</td>
-                        <td>420.1 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Neptune</td>
-                        <td>164.8</td>
-                        <td>824 seconds</td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- <p class="desc">However, as can be seen from the calculations, as we go outwards, the outer planet orbits become so large that they become painfully slow. To combat this, I decided to follow some advice I got from <b><i>u/ballgag</i></b> on r/space, where they told me to perhaps try a logarithmic function instead.</p>
-            <p class="desc">So I decided to use <b>10log(*period on a scale of 10*)</b> seconds, which gave me the following results:</p>
-            <table class="space-mono">
-                <thead>
-                    <tr>
-                        <th>Planet</th>
-                        <th>Function</th>
-                        <th>Result</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Mercury</td>
-                        <td>10log(2.41)</td>
-                        <td>3.82 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Venus</td>
-                        <td>10log(615)</td>
-                        <td>7.89 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Earth</td>
-                        <td>10log(10)</td>
-                        <td>10 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Mars</td>
-                        <td>10log(18.81)</td>
-                        <td>12.74 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Jupiter</td>
-                        <td>10log(118.6)</td>
-                        <td>20.74 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Saturn</td>
-                        <td>10log(294.6)</td>
-                        <td>24.69 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Uranus</td>
-                        <td>10log(840.1)</td>
-                        <td>29.24 seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Neptune</td>
-                        <td>10log(1648)</td>
-                        <td>32.7 seconds</td>
-                    </tr>
-                </tbody>
-            </table> -->
+            <div id="orbit-method">
+                <h3 class="sec-title">Calculation Methodology for The Orbit</h3>
+                <p class="desc">Here I used a scaled vesion of orbit times. Following is the method used for calculating the orbit times.</p>
+                <p class="desc">Assuming the orbit time for earth as 1, and scaling the orbit period in a <b>1 year:5 seconds</b> ratio, the following time can be calculated.</p>
+                <table class="space-mono">
+                    <thead>
+                        <tr>
+                            <th>Planet</th>
+                            <th>Scale of 1</th>
+                            <th>Scale of 5s</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mercury</td>
+                            <td>0.241</td>
+                            <td>1.2 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Venus</td>
+                            <td>0.615</td>
+                            <td>3.1 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Earth</td>
+                            <td>1</td>
+                            <td>5 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Mars</td>
+                            <td>1.881</td>
+                            <td>9.41 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Jupiter</td>
+                            <td>11.86</td>
+                            <td>59.3 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Saturn</td>
+                            <td>29.46</td>
+                            <td>147.3 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Uranus</td>
+                            <td>84.01</td>
+                            <td>420.1 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Neptune</td>
+                            <td>164.8</td>
+                            <td>824 seconds</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="next-agenda">
+                <h3 class="sec-title">What's Next?</h3>
+                <p class="desc">I plan to eventually add the following features:</p>
+                <ul class="listy">
+                    <li>Make the planets spin on their orbit at the same scale (soon)</li>
+                    <li>Allow user to choose the scale of orbit speed (still need to learn js)</li>
+                    <li>Show additional info upon hover</li>
+                </ul>
+            </div>
+            
+            
         </section>
     </main>
     <footer>
