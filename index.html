@@ -13,28 +13,41 @@
         <h1 class="page-title">A Scaled Model of the Solar System Made Using CSS Animations</h1>
     </header>
     <main>
-        <section id="frame-area">
-            <iframe
-                src="solar.html"
-                class="resp-iframe"
-                width="100%"
-                height="400px"
-                scrolling="no">
-            </iframe>
-        </section>
-        <section id="for-phone">
-            <section id="solar-system">
-                <div class="solar-orbit" id="neptune-orb">
-                    <div class="solar-orbit" id="uranus-orb">
-                        <div class="solar-orbit" id="saturn-orb">
-                            <div class="solar-orbit" id="jupiter-orb">
-                                <div class="solar-orbit" id="mars-orb">
-                                    <div class="solar-orbit" id="earth-orb">
-                                        <div class="solar-orbit" id="venus-orb">
-                                            <div class="solar-orbit" id="mercury-orb">
-                                                <div class="center">
-                                                    <img src="styles/images/sun.png" alt="" id="sun">
-                                                </div>
+        <section id="solar-system">
+            <div class="solar-orbit" id="neptune-orb">
+                <div id="neptune-container" class="planet-box">
+                    <img src="styles/images/neptune.png" alt="" class="planet">
+                </div>
+                <div class="solar-orbit" id="uranus-orb">
+                    <div id="uranus-container" class="planet-box">
+                        <img src="styles/images/uranus.png" alt="" class="planet">
+                    </div>
+                    <div class="solar-orbit" id="saturn-orb">
+                        <div id="saturn-container" class="planet-box">
+                            <img src="styles/images/saturn.png" alt="" class="planet">
+                        </div>
+                        <div class="solar-orbit" id="jupiter-orb">
+                            <div id="jupiter-container" class="planet-box">
+                                <img src="styles/images/jupiter.png" alt="" class="planet">
+                            </div>
+                            <div class="solar-orbit" id="mars-orb">
+                                <div id="mars-container" class="planet-box">
+                                    <img src="styles/images/mars.png" alt="" class="planet">
+                                </div>
+                                <div class="solar-orbit" id="earth-orb">
+                                    <div id="earth-container" class="planet-box">
+                                        <img src="styles/images/earth.png" alt="" class="planet">
+                                    </div>
+                                    <div class="solar-orbit" id="venus-orb">
+                                        <div id="venus-container" class="planet-box">
+                                            <img src="styles/images/venus.png" alt="" class="planet">
+                                        </div>
+                                        <div class="solar-orbit" id="mercury-orb">
+                                            <div id="mercury-container" class="planet-box">
+                                                <img src="styles/images/mercury.png" alt="" class="planet">
+                                            </div>
+                                            <div class="center">
+                                                <img src="styles/images/sun.png" alt="" id="sun">
                                             </div>
                                         </div>
                                     </div>
@@ -42,89 +55,66 @@
                             </div>
                         </div>
                     </div>
-                    <div id="neptune-container" class="planet-box">
-                        <img src="styles/images/neptune.png" alt="" class="planet">
-                    </div>
-                    <div id="uranus-container" class="planet-box">
-                        <img src="styles/images/uranus.png" alt="" class="planet">
-                    </div>
-                    <div id="saturn-container" class="planet-box">
-                        <img src="styles/images/saturn.png" alt="" class="planet">
-                    </div>
-                    <div id="jupiter-container" class="planet-box">
-                        <img src="styles/images/jupiter.png" alt="" class="planet">
-                    </div>
-                    <div id="mars-container" class="planet-box">
-                        <img src="styles/images/mars.png" alt="" class="planet">
-                    </div>
-                    <div id="earth-container" class="planet-box">
-                        <img src="styles/images/earth.png" alt="" class="planet">
-                    </div>
-                    <div id="venus-container" class="planet-box">
-                        <img src="styles/images/venus.png" alt="" class="planet">
-                    </div>
-                    <div id="mercury-container" class="planet-box">
-                        <img src="styles/images/mercury.png" alt="" class="planet">
-                    </div>
                 </div>
-            </section>
+            </div>
         </section>
+        
         <section id="text-stuff">
             <h3 class="sec-title">Calculation Methodology for The Orbit</h3>
             <p class="desc">Here I used a scaled vesion of orbit times. Following is the method used for calculating the orbit times.</p>
-            <p class="desc">Assuming the orbit time for earth as 1, and scaling the orbit period in a <b>1 year:10 seconds</b> ratio, the following time can be calculated.</p>
+            <p class="desc">Assuming the orbit time for earth as 1, and scaling the orbit period in a <b>1 year:5 seconds</b> ratio, the following time can be calculated.</p>
             <table class="space-mono">
                 <thead>
                     <tr>
                         <th>Planet</th>
                         <th>Scale of 1</th>
-                        <th>Scale of 10s</th>
+                        <th>Scale of 5s</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Mercury</td>
                         <td>0.241</td>
-                        <td>2.41 seconds</td>
+                        <td>1.2 seconds</td>
                     </tr>
                     <tr>
                         <td>Venus</td>
                         <td>0.615</td>
-                        <td>6.15 seconds</td>
+                        <td>3.1 seconds</td>
                     </tr>
                     <tr>
                         <td>Earth</td>
                         <td>1</td>
-                        <td>10 seconds</td>
+                        <td>5 seconds</td>
                     </tr>
                     <tr>
                         <td>Mars</td>
                         <td>1.881</td>
-                        <td>18.81 seconds</td>
+                        <td>9.41 seconds</td>
                     </tr>
                     <tr>
                         <td>Jupiter</td>
                         <td>11.86</td>
-                        <td>118.6 seconds</td>
+                        <td>59.3 seconds</td>
                     </tr>
                     <tr>
                         <td>Saturn</td>
                         <td>29.46</td>
-                        <td>294.6 seconds</td>
+                        <td>147.3 seconds</td>
                     </tr>
                     <tr>
                         <td>Uranus</td>
                         <td>84.01</td>
-                        <td>840.1 seconds</td>
+                        <td>420.1 seconds</td>
                     </tr>
                     <tr>
                         <td>Neptune</td>
                         <td>164.8</td>
-                        <td>1648 seconds</td>
+                        <td>824 seconds</td>
                     </tr>
                 </tbody>
             </table>
-            <p class="desc">However, as can be seen from the calculations, as we go outwards, the outer planet orbits become so large that they become painfully slow. To combat this, I decided to follow some advice I got from <b><i>u/ballgag</i></b> on r/space, where they told me to perhaps try a logarithmic function instead.</p>
+            <!-- <p class="desc">However, as can be seen from the calculations, as we go outwards, the outer planet orbits become so large that they become painfully slow. To combat this, I decided to follow some advice I got from <b><i>u/ballgag</i></b> on r/space, where they told me to perhaps try a logarithmic function instead.</p>
             <p class="desc">So I decided to use <b>10log(*period on a scale of 10*)</b> seconds, which gave me the following results:</p>
             <table class="space-mono">
                 <thead>
@@ -176,11 +166,11 @@
                         <td>32.7 seconds</td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
         </section>
     </main>
     <footer>
-        <p class="smol-desc">Credits to u/ballgag for suggesting the use of logarithmic function.<br>All vectors of the planets and the sun were taken from freepilk's simple flat image collection.</p>
+        <p class="smol-desc">All vectors of the planets and the sun were taken from freepilk's simple flat image collection.</p>
         <p class="smol-desc">This project is a personal milestone proof of skill for Ostitter_Anondo. Aside from the assets used, the entire code was written from scratch.</p>
     </footer>
 </body>

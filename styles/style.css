@@ -1,214 +1,127 @@
+:root{
+    --unitary-size: min(1vh, 1vw);
+    --unitary-neg: max(-1vh, -1vw);
+}
+
+@keyframes speen {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 body{
     background-color: rgb(2, 2, 26);
     margin: 0px;
 }
 
-#for-phone{
-    position: relative;
-}
-
-#frame-area{
-    display: none;
-    justify-content: center;
-}
-iframe{
-    border: none;
-}
-
 #solar-system{
     display: flex;
     flex-direction: column;
-    width: 90vh;
+    width: calc(var(--unitary-size) * 90);
     margin: 20px auto;
     justify-content: center;
+    align-items: center;
     position: relative;
     /* border: 1px solid orange; */
 }
 .solar-orbit{
+    position: relative;
     border: 1px solid rgba(245, 245, 245, 0.225);
     border-radius: 50%;
-    margin: 5vh auto;
+    margin: calc(var(--unitary-size) * 5) auto;
 }
 #neptune-orb{
-    margin: 0;
-    height: 90vh;
-    width: 90vh;
+    height: calc(var(--unitary-size) * 90);
+    width: calc(var(--unitary-size) * 90);
 }
 #uranus-orb{
-    height: 80vh;
-    width: 80vh;
+    height: calc(var(--unitary-size) * 80);
+    width: calc(var(--unitary-size) * 80);
 }
 #saturn-orb{
-    height: 70vh;
-    width: 70vh;
+    height: calc(var(--unitary-size) * 70);
+    width: calc(var(--unitary-size) * 70);
 }
 #jupiter-orb{
-    height: 60vh;
-    width: 60vh;
+    height: calc(var(--unitary-size) * 60);
+    width: calc(var(--unitary-size) * 60);
 }
 #mars-orb{
-    height: 50vh;
-    width: 50vh;
+    height: calc(var(--unitary-size) * 50);
+    width: calc(var(--unitary-size) * 50);
 }
 #earth-orb{
-    height: 40vh;
-    width: 40vh;
+    height: calc(var(--unitary-size) * 40);
+    width: calc(var(--unitary-size) * 40);
 }
 #venus-orb{
-    height: 30vh;
-    width: 30vh;
+    height: calc(var(--unitary-size) * 30);
+    width: calc(var(--unitary-size) * 30);
 }
 #mercury-orb{
-    height: 20vh;
-    width: 20vh;
+    height: calc(var(--unitary-size) * 20);
+    width: calc(var(--unitary-size) * 20);
 }
 
+
+.planet{
+    width: calc(var(--unitary-size) * 4);
+}
+.planet-box{
+    width: fit-content;
+    position: absolute;
+    left: calc(50% + calc(var(--unitary-neg) * 2));
+    top: calc(var(--unitary-neg) * 2);
+    animation: speen 5000ms linear 0ms infinite;
+}
+
+#neptune-container{
+    height: calc(var(--unitary-size) * 94);
+    animation-duration: 824000ms;
+}
+#uranus-container{
+    height: calc(var(--unitary-size) * 84);
+    animation-duration: 420100ms;
+}
+#saturn-container{
+    height: calc(var(--unitary-size) * 74);
+    animation-duration: 147300ms;
+}
+#jupiter-container{
+    height: calc(var(--unitary-size) * 64);
+    animation-duration: 59300ms;
+}
+#mars-container{
+    height: calc(var(--unitary-size) * 54);
+    animation-duration: 9410ms;
+}
+#earth-container{
+    height: calc(var(--unitary-size) * 44);
+}
+#venus-container{
+    height: calc(var(--unitary-size) * 34);
+    animation-duration: 3100ms;
+}
+#mercury-container{
+    height: calc(var(--unitary-size) * 24);
+    animation-duration: 1200ms;
+}
 
 
 .center{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4vh auto;
+    margin: calc(var(--unitary-size) * 4) auto;
     width: fit-content;
     height: fit-content;
 }
 #sun{
-    width: 12vh;
+    width: calc(var(--unitary-size) * 12);
 }
 
 
 
-#planet-containers{
-    display: flex;
-    position: relative;
-}
-.planet-box{
-    position: absolute;
-    display: flex;
-    align-items: flex-end;
-    width: 6vh;
-    border: 1px solid red;
-}
-.planet{
-    max-width: 100%;
-    scale: 80%;
-}
-
-#mercury-container{
-    position: center;
-    height: 12vh;
-    right: 41.75vh;
-    bottom: 32.7vh;
-    border: none;
-    /* transform: rotate(-180deg); */
-    transform-origin: top center;
-    animation: speen 3.82s linear 0s infinite;
-}
-#venus-container{
-    position: center;
-    height: 17vh;
-    right: 41.75vh;
-    bottom: 27.7vh;
-    border: none;
-    /* transform: rotate(-90deg); */
-    transform-origin: top center;
-    animation: speen 7.89s linear 0s infinite;
-}
-#earth-container{
-    position: center;
-    height: 22vh;
-    right: 41.75vh;
-    bottom: 22.7vh;
-    border: none;
-    /* transform: rotate(90deg); */
-    transform-origin: top center;
-    animation: speen 10s linear 0s infinite;
-}
-#mars-container{
-    position: center;
-    height: 27vh;
-    right: 41.75vh;
-    bottom: 17.7vh;
-    border: none;
-    /* transform: rotate(90deg); */
-    transform-origin: top center;
-    animation: speen 12.74s linear 0s infinite;
-}
-#jupiter-container{
-    position: center;
-    height: 32vh;
-    right: 41.75vh;
-    bottom: 12.7vh;
-    border: none;
-    /* transform: rotate(90deg); */
-    transform-origin: top center;
-    animation: speen 20.74s linear 0s infinite;
-}
-#saturn-container{
-    position: center;
-    height: 37vh;
-    right: 41.75vh;
-    bottom: 7.8vh;
-    border: none;
-    /* transform: rotate(90deg); */
-    transform-origin: top center;
-    animation: speen 24.69s linear 0s infinite;
-}
-#uranus-container{
-    position: center;
-    height: 42vh;
-    right: 41.75vh;
-    bottom: 2.9vh;
-    border: none;
-    /* transform: rotate(90deg); */
-    transform-origin: top center;
-    animation: speen 29.24s linear 0s infinite;
-}
-#neptune-container{
-    position: center;
-    height: 47vh;
-    right: 41.75vh;
-    bottom: -2.0vh;
-    border: none;
-    /* transform: rotate(90deg); */
-    transform-origin: top center;
-    animation: speen 32.7s linear 0s infinite;
-}
-
-
-
-@keyframes speen {
-    0%{
-        transform: rotate(0deg);
-        transform-origin: top center;
-    }
-    25%{
-        transform: rotate(90deg);
-        transform-origin: top center;
-    }
-    50%{
-        transform: rotate(180deg);
-        transform-origin: top center;
-    }
-    75%{
-        transform: rotate(270deg);
-        transform-origin: top center;
-    }
-    100%{
-        transform: rotate(360deg);
-        transform-origin: top center;
-    }
-}
-
-
-@media screen and (max-width: 576px) {
-    #for-phone{
-        display: none;
-        height: 340px;
-        justify-content: center;
-    }
-    #frame-area{
-        display: flex;
-    }
-}
